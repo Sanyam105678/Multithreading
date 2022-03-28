@@ -1,0 +1,8 @@
+-> Deadlock is the state when 2 or more threads are waiting for object lock holded by one another. In this scenario 1st thread is waiting
+for the object lock acquired by 2nd thread, where 2nd thread is waiting for the object lock acquired by the 1st thread. This situation is 
+called Deadlock in Multithreading, it is just a case of infinite wait.
+
+-> A multithreaded application suffers from the deadlock because the synchronized keyword. Synchronised keyword makes the application thread
+safe it means at a time only one thread can apply lock of synochronised method and execute it, during this time other threads must wait till 
+the lock is released. but in this scenerio if that 1st thread wants to execute that method locked by one of the waiting threads of the method on 
+which 1st thread has applied lock, then it causes deadlock.
